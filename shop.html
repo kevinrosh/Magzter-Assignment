@@ -23,24 +23,28 @@
 <script>
     const data = [
         {
+            "id": "iphone",
             "title": "iPhone",
             "price": "₹ 1,29,000",
             "model": "12",
             "year": "2022"
         },
         {
+            "id": "samsung",
             "title": "Samsung",
             "price": "₹ 90,000",
             "model": "Galaxy S22",
             "year": "2022"
         },
         {
+            "id": "oneplus",
             "title": "Oneplus",
             "price": "₹ 60,000",
             "model": "10",
             "year": "2022"
         },
         {
+            "id": "redmi",
             "title": "Redmi",
             "price": "₹ 30,000",
             "model": "Note 11",
@@ -51,7 +55,7 @@
     for(let i = 0;i<data.length; i++){
         list.innerHTML += `<li>
                 <h3 >${data[i].title}</h3>
-                <img id="img" src="${data[i].title}.png" alt="${data[i].title}" width="600px" height="400px">
+                <img id="img" src="${data[i].id}.png" alt="${data[i].title}" width="600px" height="400px">
                 <div class="desc">
                     <span>Price: Rs.${data[i].price}</span>
                     <span>Model: ${data[i].model}</span>
