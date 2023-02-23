@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Gadgetwizz</title>
+</head>
+<body>
+	<header>
+		<h1>
+			GADGETWIZZ
+		</h1>
+		<ul>
+			<li><a href="#" style="color:white">Home</a></li>
+			<li><a href="products.html" style="color:white">Products</a></li>
+			<li><a href="shop.html" style="color:white">Shop</a></li>
+		</ul>
+	</header>
+	<div class="pictures">
+		<li><img src= "iphone.png"  onclick="big('iphone.png')"></li>
+		<li><img src= "samsung.png" onclick="big('samsung.png')"></li>
+		<li><img src= "oneplus.png" onclick="big('oneplus.png')"></li>
+		<li><img src= "redmi.png" onclick="big('redmi.png')"></li>
+    </div>
+     
+    <div class = "big-pics">
+    	<img src = "iphone.png" class ="big">
+    </div>
+    <aside>
+    	<p>At GADGETWIZZ, you can able to view the latest high end smart phone available in the market today.</p>
+    	<p>GADGETWIZZ is an online website that offers comprehensive and up-to-date mobile phone information.The website offers information about various mobile brand. It enables its users to get to know about latest and real-time mobile phone trends and other related information.</p> 
+    	<P>GADGETWIZZ provides a comparison service that enables its users to compare mobile phones and many other features.</P>
+    </aside>
+    <footer>
+    	<h6>copyright &copy; 2023 GADGETWIZZ</h6>
+    </footer>
+
+</body>
+<script>
+ function big(img) {
+ 	document.querySelector('.big').src=img; 
+ }
+</script>
+</html>

@@ -1,0 +1,35 @@
+.desc{
+    display: flex;
+    flex-direction: column;
+  }
+
+#list{
+    list-style: none;
+}
+
+.toolbar
+{
+  position: absolute;
+  right: 5%;
+}
+.toolbar li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+.toolbar li a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500px;
+}
+.shop{
+    
+    position: absolute;
+    font-family: sans-serif;
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+

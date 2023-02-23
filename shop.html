@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <title>Shop</title>
+</head>
+<body>
+    <ul class="toolbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="products.html">Products</a></li>
+		<li><a href="shop.html">Shop</a></li>
+	</ul>
+    
+
+    <div class="shop">
+        <ul id="list"></ul>
+    </div>
+    
+</body>
+<script>
+    const data = [
+        {
+            "title": "iPhone",
+            "price": "₹ 1,29,000",
+            "model": "12",
+            "year": "2022"
+        },
+        {
+            "title": "Samsung",
+            "price": "₹ 90,000",
+            "model": "Galaxy S22",
+            "year": "2022"
+        },
+        {
+            "title": "Oneplus",
+            "price": "₹ 60,000",
+            "model": "10",
+            "year": "2022"
+        },
+        {
+            "title": "Redmi",
+            "price": "₹ 30,000",
+            "model": "Note 11",
+            "year": "2022"
+        }
+    ];
+    const list = document.getElementById("list");
+    for(let i = 0;i<data.length; i++){
+        list.innerHTML += `<li>
+                <h3 >${data[i].title}</h3>
+                <img id="img" src="${data[i].title}.png" alt="${data[i].title}" width="600px" height="400px">
+                <div class="desc">
+                    <span>Price: Rs.${data[i].price}</span>
+                    <span>Model: ${data[i].model}</span>
+                    <span>Year: ${data[i].year}</span>
+                </div>
+                <button class="buyBtn" name="${data[i].title}">Buy</button>
+            </li>`;
+    }
+    function butBtnList(e){
+        if (e.target.className == "buyBtn"){
+            window.location = "payment.html";
+        }
+    }
+    list.addEventListener("click", butBtnList);
+</script>
+</html>
